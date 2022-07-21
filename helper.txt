@@ -1,0 +1,39 @@
+
+Steps 
+1. To create a project using composer
+composer create-project laravel/laravel:^8.0 news
+
+2. To create model and migrations
+php artisan make:model News -m
+
+3. To create controller with default CRUD methods
+php artisan make:controller Api/V1/NewsController -r
+
+4. To create factory
+php artisan make:factory NewsFactory --model=News
+
+5. To create tables first configure env file and run migration
+php artisan migrate
+
+6. To install Default authentication Laravel/ui 
+composer require laravel/ui
+php artisan ui vue --auth
+php artisan ui bootstrap --auth
+npm install && npm run dev
+
+7. To feed database with seeder
+php artisan db:seed 
+
+To run scheduler locally for CRON jobs
+php artisan schedule:work
+
+
+
+
+
+
+
+
+
+
+
